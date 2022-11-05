@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack, Button, IconButton } from "@mui/material";
+import { Stack, Button, IconButton, ButtonGroup } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 
 const MuiButton = () => {
@@ -62,6 +62,20 @@ const MuiButton = () => {
 
       {/* TO DISABLE ELEVATION -> disableElevation
       TO DISABLE RIPPLE -> disableRipple */}
+
+      {/* BUTTON GROUP */}
+      <Stack direction="row">
+        <ButtonGroup
+          variant="contained"
+          disableRipple
+          orientation="vertical"
+          aria-label="alignment button group"
+        >
+          <Button>Create</Button>
+          <Button>Update</Button>
+          <Button>Delete</Button>
+        </ButtonGroup>
+      </Stack>
     </Stack>
   );
 };
